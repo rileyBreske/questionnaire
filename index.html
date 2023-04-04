@@ -16,9 +16,9 @@
       <a href="#">Contact</a>
       <img src="Artboard-21-2.png" alt="Logo" class="logo" />
     </div>
-    <div class="container">
+    <div class="container content flex">
       <h1>Mash Elite Questionnaire</h1>
-      <form action="https://getform.io/f/be81a0de-5994-4cd5-a115-d71f6431185c" method="post">
+      <form action="https://getform.io/f/953e62b1-c2b9-4bb7-bb9c-60799bb047b1" method="post">
         <h3>Today's Date</h3>
         <input type="date" id="date" name="date" min="2018-01-01" max="2035-12-31" required />
         <h3>Athlete</h3>
@@ -26,7 +26,7 @@
         <select type="select" name="Athlete">
           <option>--Choose an athlete--</option>
           <script>
-            var myArray = new Array(
+            var athleteArray = new Array(
               "Riley Breske",
               "Ryan Grimsland",
               "Ruby Shepard",
@@ -40,20 +40,20 @@
               "Jo Neel",
               "Lacy Duinkerken"
             );
-            for (i = 0; i < myArray.length; i++) {
-              document.write('<option value="' + myArray[i] + '">' + myArray[i] + "</option>");
+            for (i = 0; i < athleteArray.length; i++) {
+              document.write('<option value="' + athleteArray[i] + '">' + athleteArray[i] + "</option>");
             }
           </script>
         </select>
 
         <h3>Bodyweight first thing in the A.M. in KG</h3>
-        <input type="text" name="q1" />
+        <input type="text" name="bw" />
         <h3>How many hours did you sleep last night?</h3>
-        <input type="text" name="q2" />
+        <input type="text" name="sleepTime" />
         <h3>Nutrition Quantity in regards to number of meals on the day before?</h3>
-        <input type="text" name="q3" />
+        <input type="text" name="meals" />
         <h3>Rate your sleep quality on a scale from 1-5</h3>
-        <select type="text" id="readiness" name="sleep">
+        <select type="text" id="readiness" name="sleepQual">
           <option value="">--Please select a value--</option>
           <option value="1">1. Way worse than normal</option>
           <option value="2">2. Worse than normal</option>
