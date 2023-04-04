@@ -4,20 +4,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mash Elite Performance</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <div class="topnav">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <img src="Artboard-21-2.png" alt="Logo" class="logo" />
+    </div>
     <div class="container">
-      <h1>Questionnaire App</h1>
-      <form>
-        <h2>Question 1</h2>
+      <h1>Mash Elite Questionnaire</h1>
+      <form action="https://getform.io/f/81c28257-0fc4-4ff8-b8ce-9a5f93eaa60d" method="post">
+        <h3>Today's Date</h3>
+        <input type="date" id="date" name="date" min="2018-01-01" max="2035-12-31" required />
+        <h3>Athlete</h3>
+
+        <select type="select" name="Athlete">
+          <option>Choose an athlete</option>
+          <script>
+            var myArray = new Array(
+              "Riley Breske",
+              "Ryan Grimsland",
+              "Ruby Shepard",
+              "Tynan O'Connor",
+              "Harley Creech",
+              "Tank Lunsford",
+              "Matt Wininger",
+              "Avery Dayvault",
+              "Wes Brock",
+              "Katie McDaniel",
+              "Jo Neel",
+              "Lacy Duinkerken"
+            );
+            for (i = 0; i < myArray.length; i++) {
+              document.write('<option value="' + myArray[i] + '">' + myArray[i] + "</option>");
+            }
+          </script>
+        </select>
+
+        <h3>Bodyweight first thing in the A.M. in KG</h3>
         <input type="text" name="q1" />
-        <h2>Question 2</h2>
+        <h3>How many hours did you sleep last night?</h3>
         <input type="text" name="q2" />
-        <h2>Question 3</h2>
+        <h3>Nutrition Quantity in regards to number of meals on the day before?</h3>
         <input type="text" name="q3" />
+        <h3>Question 4</h3>
+        <select type="text" id="readiness" name="q4">
+          <option value="">--Please select a value--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <h3>Question 4</h3>
+        <select type="text" id="readiness" name="q5">
+          <option value="">--Please select a value--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <h3>Question 4</h3>
+        <select type="text" id="readiness" name="q6">
+          <option value="">--Please select a value--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
         <button type="submit">Submit</button>
       </form>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
